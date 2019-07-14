@@ -34,6 +34,7 @@ _C.MODEL.CLS_AGNOSTIC_BBOX_REG = False
 # the path in paths_catalog. Else, it will use it as the specified absolute
 # path
 _C.MODEL.WEIGHT = ""
+_C.MODEL.USE_SYNCBN = False
 
 
 # -----------------------------------------------------------------------------
@@ -285,7 +286,7 @@ _C.MODEL.FCOS.NUM_CLASSES = 81  # the number of classes including background
 _C.MODEL.FCOS.FPN_STRIDES = [8, 16, 32, 64, 128]
 _C.MODEL.FCOS.PRIOR_PROB = 0.01
 _C.MODEL.FCOS.INFERENCE_TH = 0.05
-_C.MODEL.FCOS.NMS_TH = 0.4
+_C.MODEL.FCOS.NMS_TH = 0.6
 _C.MODEL.FCOS.PRE_NMS_TOP_N = 1000
 
 # Focal loss parameter: alpha
